@@ -46,14 +46,16 @@ class Login extends Component {
 
         if (this.state.username === "" || this.state.password === "") { return }
 
-        // Default username and password is hardcoded Access token is as per obtained from the Instagram APIs
-
-        if (this.state.username === "pradeeplh" && this.state.password === "upgrad@123") {
-            sessionStorage.setItem('username','pradeeplh');
-            sessionStorage.setItem('access-token', 'IGQVJVcm41R2IxLUF5M1RhUi1Uc1NTdHJNb2I1YlpXU3dPMlRNdllrd0VxV245M1dtUngyMU5HVnUzUEhLQmhtN3JWWnFWb055MWFEQU9FMV9rVlJROXZAncXl1ZA3UwUXN3OUw5VkFwM05pTDJzenhldDJNNHV2ZAXdtMllV');
+        // Set the default username and password here
+        // Set the access token here 
+        // Validate credentials and redirect to home
+        
+        if (this.state.username === "saurabh" && this.state.password === "Temp@2021") {
+            sessionStorage.setItem('username','saurabh');
+            sessionStorage.setItem('access-token', 'IGQVJXR2I0U1NqUDZARb2FxRzZA6ODVfMlM5N2FweXZAqSk5VSm5YN2JUNVVkRmJlUld6LXJwOXRaaU1TeVlvTFJLTTd2OFFDeUVqeElaYkZAPdW50ZAU03UFdvS1MtM1RESlFnNGRqbFNmS2EtWUZACSU5fWEllTWhiV1VyZAjJB');
             this.setState({ loggedIn: true });
 
-            // Once login is validated and successful, navigation to Home UI page is performed
+            // Redirect to Home
             this.navigateToHome();
         } else {
             this.setState({ incorrectUsernamePassword: "dispBlock" });
