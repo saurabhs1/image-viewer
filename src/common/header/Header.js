@@ -114,7 +114,7 @@ class Header extends Component{
                   }}>
                     <div style={{padding:'5px'}}>
 
-                      { /*   If the UI page is Home page, then drop down on the profile icon should display 2 options : 1. My Account 2. Logout */ }
+                      { /* Display Account & Logout on Home Page */ }
                       { (screen === "Home") &&
                         <div>
                           <MenuItem onClick={this.handleAccount}>My Account</MenuItem>
@@ -138,13 +138,13 @@ class Header extends Component{
   }
 
   handleAccount = ()=>{
-    // Perform navigate to Profile page by clicking on My Account dropdown action
+    // Navigate to Profile Page
     this.props.handleAccount();
     this.handleClose();
   }
 
   handleLogout = ()=>{
-    // Perform logout operation
+    // Logout User
     this.props.handleLogout();
     this.handleClose();
   }

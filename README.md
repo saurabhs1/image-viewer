@@ -1,10 +1,6 @@
 ### Image Viewer
 
-As part of course 7 in Upgrad Full Stack Development course, Instagram alike ReactJS web application has been developed.
-
-
 Below README details on the Project usage has been retained as it is, from the initial Code stub provided.
-
 
 ## Table of Contents
 
