@@ -75,13 +75,13 @@ class Header extends Component{
     return (<div>
         <AppBar className={classes.appHeader}>
           <Toolbar>
-            { /*   Here, we are displaying logo Image Viewer on all the 3 pages : Login, Home, Profile pages */ }
+            { /* Display Logo on all three pages */ }
 
             {(screen === "Login" || screen === "Home") && <span className="header-logo">Image Viewer</span>}
             {(screen === "Profile") && <Link style={{ textDecoration: 'none', color: 'white' }} to="/home"><span className="header-logo">Image Viewer</span></Link>}
             <div className={classes.grow}/>
 
-            { /*   Here, we are checking if the UI page is Home page, then display Search bar */ }
+            { /* Display Search Bar on Home Page */ }
             {(screen === "Home") &&
               <div className={classes.search}>
                 <div className={classes.searchIcon}>
@@ -93,7 +93,7 @@ class Header extends Component{
               </div>
             }
 
-            { /*   Here, we are checking if the UI page is Home or Profile page, then display Profile icon */ }
+            { /* Display profile Icon on Home and Profile page */ }
             {(screen === "Home" || screen === "Profile")  &&
               <div>
                 <IconButton onClick={this.handleClick}>
